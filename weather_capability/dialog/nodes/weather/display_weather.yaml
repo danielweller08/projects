@@ -1,0 +1,14 @@
+title: Display Weather
+type: node
+condition: "$weather_result.success == true"
+response:
+  context:
+    - variable: "weather_city"
+      value: null
+  messages:
+    - type: text
+      content: Showing weather for <? $weather_result.city ?>
+    - type: text
+      content: "On <? $weather_result.dayOfWeek ?> temperature will be between <? $weather_result.minTemp ?> °C and <? $weather_result.maxTemp ?> °C. Details: <? $weather_result.narrative ?>"
+finally:
+  behavior: wait

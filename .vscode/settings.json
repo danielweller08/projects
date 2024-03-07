@@ -1,0 +1,5 @@
+{
+	"cucumberautocomplete.steps": [
+		"..\\AppData\\Roaming\\npm\\node_modules\\sapdas-cli\\dist\\module\\test\\bdd\\step-definitions\\**\\*.steps.[tj]s"
+	],"editor.quickSuggestions": {"strings":"on"}
+}
